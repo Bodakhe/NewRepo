@@ -13,6 +13,13 @@
 		32B29E092A3A37780043E7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B29E072A3A37780043E7E9 /* Main.storyboard */; };
 		32B29E0B2A3A377B0043E7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B29E0A2A3A377B0043E7E9 /* Assets.xcassets */; };
 		32B29E0E2A3A377B0043E7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B29E0C2A3A377B0043E7E9 /* LaunchScreen.storyboard */; };
+		32B29E1A2A3A38A60043E7E9 /* AppUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B29E172A3A38A60043E7E9 /* AppUrl.swift */; };
+		32B29E1B2A3A38A60043E7E9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B29E182A3A38A60043E7E9 /* Networking.swift */; };
+		32B29E1C2A3A38A60043E7E9 /* UsersApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B29E192A3A38A60043E7E9 /* UsersApiServices.swift */; };
+		32B29E202A3A39080043E7E9 /* UIImageviewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B29E1E2A3A39080043E7E9 /* UIImageviewExtentions.swift */; };
+		32B29E212A3A39080043E7E9 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B29E1F2A3A39080043E7E9 /* NetworkReachability.swift */; };
+		32B29E242A3A396A0043E7E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B29E232A3A396A0043E7E9 /* User.swift */; };
+		32B29E272A3A3B430043E7E9 /* UserlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B29E262A3A3B430043E7E9 /* UserlistViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		32B29E0A2A3A377B0043E7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B29E0D2A3A377B0043E7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B29E0F2A3A377B0043E7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B29E172A3A38A60043E7E9 /* AppUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUrl.swift; sourceTree = "<group>"; };
+		32B29E182A3A38A60043E7E9 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		32B29E192A3A38A60043E7E9 /* UsersApiServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersApiServices.swift; sourceTree = "<group>"; };
+		32B29E1E2A3A39080043E7E9 /* UIImageviewExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageviewExtentions.swift; sourceTree = "<group>"; };
+		32B29E1F2A3A39080043E7E9 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		32B29E232A3A396A0043E7E9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32B29E262A3A3B430043E7E9 /* UserlistViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserlistViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		32B29E002A3A37780043E7E9 /* AssignmentDemoTest */ = {
 			isa = PBXGroup;
 			children = (
+				32B29E152A3A38530043E7E9 /* MVVM */,
 				32B29E012A3A37780043E7E9 /* AppDelegate.swift */,
 				32B29E032A3A37780043E7E9 /* SceneDelegate.swift */,
 				32B29E052A3A37780043E7E9 /* ViewController.swift */,
@@ -65,6 +80,68 @@
 				32B29E0F2A3A377B0043E7E9 /* Info.plist */,
 			);
 			path = AssignmentDemoTest;
+			sourceTree = "<group>";
+		};
+		32B29E152A3A38530043E7E9 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				32B29E282A3A3BB60043E7E9 /* View */,
+				32B29E252A3A3B090043E7E9 /* ViewModels */,
+				32B29E222A3A39370043E7E9 /* Model */,
+				32B29E1D2A3A38D90043E7E9 /* Helper */,
+				32B29E162A3A385D0043E7E9 /* Services */,
+				32BB566A2A3CC73400371AF5 /* Controller */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		32B29E162A3A385D0043E7E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				32B29E172A3A38A60043E7E9 /* AppUrl.swift */,
+				32B29E182A3A38A60043E7E9 /* Networking.swift */,
+				32B29E192A3A38A60043E7E9 /* UsersApiServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		32B29E1D2A3A38D90043E7E9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				32B29E1F2A3A39080043E7E9 /* NetworkReachability.swift */,
+				32B29E1E2A3A39080043E7E9 /* UIImageviewExtentions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		32B29E222A3A39370043E7E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32B29E232A3A396A0043E7E9 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32B29E252A3A3B090043E7E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				32B29E262A3A3B430043E7E9 /* UserlistViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		32B29E282A3A3BB60043E7E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32BB566A2A3CC73400371AF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +216,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				32B29E062A3A37780043E7E9 /* ViewController.swift in Sources */,
+				32B29E202A3A39080043E7E9 /* UIImageviewExtentions.swift in Sources */,
+				32B29E1B2A3A38A60043E7E9 /* Networking.swift in Sources */,
 				32B29E022A3A37780043E7E9 /* AppDelegate.swift in Sources */,
+				32B29E1C2A3A38A60043E7E9 /* UsersApiServices.swift in Sources */,
+				32B29E272A3A3B430043E7E9 /* UserlistViewModel.swift in Sources */,
+				32B29E242A3A396A0043E7E9 /* User.swift in Sources */,
 				32B29E042A3A37780043E7E9 /* SceneDelegate.swift in Sources */,
+				32B29E1A2A3A38A60043E7E9 /* AppUrl.swift in Sources */,
+				32B29E212A3A39080043E7E9 /* NetworkReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
